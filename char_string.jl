@@ -29,3 +29,18 @@ length(str)
 myStr = "αβσ∑"
 firstindex(myStr)
 lastindex(myStr)
+
+myStr[1]
+myStr[3]
+myStr[5]
+myStr[7]
+
+str1 = "aaaa"
+str2 = "bbbb"
+string(str1,str2)
+
+str1*" c "*str2
+
+"Julia "^4
+x=5;y=15;
+"First number is $x and second number is $y"
