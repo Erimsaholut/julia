@@ -1,0 +1,49 @@
+function topla(x, y)
+    return x + y
+end
+
+function cikar(x, y)
+    return x - y
+end
+
+function carp(x, y)
+    return x * y
+end
+
+
+function bol(x, y)
+    if y == 0
+        return "Sıfıra bölme hatası"
+    else
+        return x / y
+    end
+end
+
+println("Yapmak istediğiniz işlemi seçin:")
+println("1: Toplama")
+println("2: Çıkarma")
+println("3: Çarpma")
+println("4: Bölme")
+secim = parse(Int, readline())
+
+
+print("Birinci sayı: ")
+sayi1 = parse(Float64, readline())
+print("İkinci sayı: ")
+sayi2 = parse(Float64, readline())
+
+if secim == 1
+    sonuc = topla(sayi1, sayi2)
+    println("Sonuç: ", sonuc)
+elseif secim == 2
+    sonuc = cikar(sayi1, sayi2)
+    println("Sonuç: ", sonuc)
+elseif secim == 3
+    sonuc = carp(sayi1, sayi2)
+    println("Sonuç: ", sonuc)
+elseif secim == 4
+    sonuc = bol(sayi1, sayi2)
+    println("Sonuç: ", sonuc)
+else
+    println("Geçersiz işlem seçimi")
+end
